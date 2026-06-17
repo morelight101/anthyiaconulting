@@ -1,0 +1,37 @@
+title: Anthyia Consulting
+tagline: We know the direction
+description: Compliance and digital process automation consulting services in Luxembourg.
+url: "https://anthyiaconsulting.com"
+baseurl: ""
+lang: en
+locale: en_LU
+timezone: Europe/Luxembourg
+
+author:
+  name: Anthyia Consulting
+  email: contact@anthyiaconsulting.com
+
+theme_name: Justice
+permalink: /blog/:title/
+
+collections:
+  pages:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/facade.jpg
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - node_modules

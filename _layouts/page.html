@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<section class="page-hero">
+  <div class="section-inner narrow">
+    <p class="eyebrow">{{ page.eyebrow | default: site.tagline }}</p>
+    <h1>{{ page.title }}</h1>
+    {% if page.description %}
+      <p class="lede">{{ page.description }}</p>
+    {% endif %}
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="section-inner content-flow">
+    {{ content }}
+  </div>
+</section>

@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    <div class="section-inner narrow">
+      <a class="back-link" href="{{ '/blog/' | relative_url }}">Back to blog</a>
+      <p class="eyebrow">{{ page.date | date: "%d %B %Y" }}</p>
+      <h1>{{ page.title }}</h1>
+      {% if page.description %}
+        <p class="lede">{{ page.description }}</p>
+      {% endif %}
+    </div>
+  </header>
+
+  <div class="section-inner content-flow post-body">
+    {{ content }}
+  </div>
+</article>
